@@ -8,7 +8,7 @@ terraform {
 
  backend "s3" {
     bucket         = "remote-state-hars"
-    key            = "remote-state.tfstate"
+    key            = "locals-demo-state.tfstate"
     region         = "us-east-1"
     encrypt        = true
     use_lockfile   = true # Enables native S3 locking

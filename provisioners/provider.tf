@@ -4,15 +4,7 @@ terraform {
       source  = "hashicorp/aws"
       version = "5.45.0" # Changed from 6.45.0 to a valid stable version
     }
-}
-
- backend "s3" {
-    bucket         = "remote-state-hars"
-    key            = "remote-state.tfstate"
-    region         = "us-east-1"
-    encrypt        = true
-    use_lockfile   = true # Enables native S3 locking
- }
+  }
 }
 
 provider "aws" {
